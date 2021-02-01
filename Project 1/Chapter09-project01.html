@@ -6,7 +6,7 @@
    <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-<form method="get" action="" id="mainForm" onsubmit="empty()">
+<form method="get" action="" id="mainForm" onsubmit="return empty()">
    <script type="text/javascript" src="js/chapter09-project01.js"> </script>
    <fieldset>
       <legend>Edit Art Work Details</legend>
@@ -76,7 +76,7 @@
          <tr>
             <td colspan="2">
                <div class="rectangle centered"> 
-                  <input type="submit" id="submit" class="btn"  onsubmit="return submissionCheck()">
+                  <input type="submit" id="submit" class="btn"  >
                   <!-- <script>empty();</script> -->
                   <input type="reset" value="Clear Form" class="btn">      
                </div>
