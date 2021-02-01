@@ -3,14 +3,19 @@
 
 
     
-function showImage(imgName) {
+function showImage(imgName,imgTitle) {
     var curImage = parent.document.getElementById('big-image');
+    var curCaption = parent.document.getElementById('caption');
+
     var thePath = 'images/medium/';
     var theSource = thePath + imgName;
     //alert("The image is being changed..!");
    curImage.src = theSource;
    curImage.alt = imgName;
-   curImage.title = imgName;
+   curImage.title = imgTitle;
+
+ 
+   curCaption.innerHTML = imgTitle;
 }
 
   
