@@ -21,11 +21,11 @@ function showImage(imgName,imgTitle) {
   
 function getOpacity(eventInstance, isNext){
     if(isNext){
-        document.getElementById("big-image").style.opacity = 0.8;
-        document.getElementById("thumbnails").style.opacity = 0.8;
+        document.getElementById(eventInstance).style.opacity = 0.8;
+        //document.getElementById(eventInstance).style.opacity = 0.8;
     }
     else{
-        document.getElementById("big-image").style.opacity = 0.1 ;
-        document.getElementById("thumbnails").style.opacity = 0.1 ;
+        document.getElementById(eventInstance).style.opacity = 0;
+        
     }
 }/* Sharmin*/
