@@ -16,7 +16,7 @@ function showImage(imgName,imgTitle) {
 
  
    curCaption.innerHTML = imgTitle;
-}
+}/* Foram*/
 
   
 function getOpacity(eventInstance, isNext){
