@@ -6,7 +6,7 @@
    <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-<form method="get" action="" id="mainForm" onsubmit="return empty()">
+<form method="get" action="" id="mainForm" >
    <script type="text/javascript" src="js/chapter09-project01.js"> </script>
    <fieldset>
       <legend>Edit Art Work Details</legend>
@@ -44,15 +44,15 @@
                   <option>People</option>
                </select>
                </p>
-               <p>	
+               <p>       
                <label>Medium</label><br/>               
                <input type="text" name="medium" id="medium" class="hilightable"/>
                </p>
-               <p>	
+               <p>       
                <label>Year</label><br/>               
                <input type="text" name="year" id="year" class="hilightable required"/>
                </p>  
-               <p>	
+               <p>       
                <label>Museum</label><br/>               
                <input type="text" name="museum" id="museum" class="hilightable"/>
                </p>                             
@@ -72,23 +72,22 @@
                </div>               
             </td>
          </tr>
- 
          <tr>
             <td colspan="2">
                <div class="rectangle centered"> 
-                  <input type="submit" id="submit" class="btn"  >
+                  <input type="submit" id="submit" class="btn" value="Submit">
                   <!-- <script>empty();</script> -->
-                  <input type="reset" value="Clear Form" class="btn">      
+                  <input type="reset" id="reset" value="Clear Form" class="btn">      
                </div>
-
+ 
             </td>
          </tr>
       </table>
    </fieldset>
 </form>
-
+ 
 </script>
-
-
+ 
+ 
 </body>
 </html>
