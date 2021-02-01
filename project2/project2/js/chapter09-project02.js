@@ -16,16 +16,18 @@ function showImage(imgName,imgTitle) {
 
  
    curCaption.innerHTML = imgTitle;
-}/* Foram*/
+}/*Foram*/
 
   
-function getOpacity(eventInstance, isNext){
+
+
+function getOpacity(isNext){
+    var imgCaption = document.getElementById("caption");
     if(isNext){
-        document.getElementById(eventInstance).style.opacity = 0.8;
-        //document.getElementById(eventInstance).style.opacity = 0.8;
+        imgCaption.style.opacity = 0;
     }
     else{
-        document.getElementById(eventInstance).style.opacity = 0;
+        imgCaption.style.opacity = 0.8;
         
     }
 }/* Sharmin*/
