@@ -22,7 +22,7 @@ function setBackground(e) {
 
 
 
-// submit.addEventListener("load",function(){
+// window.addEventListener("load",function(){
 // var form = document.getElementById("mainForm");
 // form.addEventListener("submit",submissionCheck);
 // function submissionCheck(event){
@@ -54,20 +54,25 @@ function setBackground(e) {
 // }
 function empty()
 {
-  var form = document.getElementById("mainForm");
-   form.addEventListener("submit",submissionCheck);
-   
+  var x,y,z;
+  x = document.getElementById("title").value; 
+
+  y =  document.getElementById("description").value;
+  z =  document.getElementById("year").value;
   if (x == "" || y == "" || z == "") 
    { 
        if(x == "")
        {
            console.log(x);
+           
             alert("Enter a Valid title");
+            
+            return false;
     //   submit.addEventListener(
     //       "click", function(event){
     //     event.preventDefault();
     //         });
-            return false;
+            
        }
        else if(y == "")
        {
