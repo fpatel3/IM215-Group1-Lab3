@@ -22,78 +22,76 @@ function setBackground(e) {
 
 
 
-submit.addEventListener("load",function(){
-var form = document.getElementById("mainForm");
-form.addEventListener("submit",submissionCheck);
-function submissionCheck(event){
+// submit.addEventListener("load",function(){
+// var form = document.getElementById("mainForm");
+// form.addEventListener("submit",submissionCheck);
+// function submissionCheck(event){
   
-  var requiredInputs = document.querySelectorAll(".required");
+//   var requiredInputs = document.querySelectorAll(".required");
 
-      for(i=0; i < requiredInputs.length; i++){
-            if(requiredInputs[i].nodeValue == "")
-            {
-                event.preventDefault();                
-                requiredInputs[i].classList.add("error");
-                alert("You are trying to submit the form");
-            }
+//       for(i=0; i < requiredInputs.length; i++){
+//             if(requiredInputs[i].nodeValue == "")
+//             {
+//                 event.preventDefault();                
+//                 requiredInputs[i].classList.add("error");
+//                 alert("You are trying to submit the form");
+//             }
 
-            else{
-                requiredInputs.classList.remove("error");
-            }
-          }
+//             else{
+//                 requiredInputs.classList.remove("error");
+//             }
+//           }
+// }
+// });
+
+
+
+
+      
+       
+//    }
+//    // code done by foram..
+// }
+function empty()
+{
+  var form = document.getElementById("mainForm");
+   form.addEventListener("submit",submissionCheck);
+   
+  if (x == "" || y == "" || z == "") 
+   { 
+       if(x == "")
+       {
+           console.log(x);
+            alert("Enter a Valid title");
+    //   submit.addEventListener(
+    //       "click", function(event){
+    //     event.preventDefault();
+    //         });
+            return false;
+       }
+       else if(y == "")
+       {
+        console.log(y);
+
+      alert("Enter a Valid description");
+    //   submit.addEventListener("click", function(event){
+    //     event.preventDefault();
+     // });
+      return false;
+       }
+      else if(z == "")
+      {
+     alert("Enter a Valid year");
+    //  submit.addEventListener("click", function(event){
+    //     event.preventDefault();
+    //   });
+    return false;
+      }
+      
+       
+   }
+   // code done by foram..
 }
-});
-
-
-
-
-      
-       
-//    }
-//    // code done by foram..
-// }
-// function empty()
-// {
-//   var x,y,z;
-//   x = document.getElementById("title").value; 
-
-//   y =  document.getElementById("description").value;
-//   z =  document.getElementById("year").value;
-//   if (x == "" || y == "" || z == "") 
-//    { 
-//        if(x == "")
-//        {
-//            console.log(x);
-//             alert("Enter a Valid title");
-//     //   submit.addEventListener(
-//     //       "click", function(event){
-//     //     event.preventDefault();
-//     //         });
-//             return false;
-//        }
-//        else if(y == "")
-//        {
-//         console.log(y);
-
-//       alert("Enter a Valid description");
-//     //   submit.addEventListener("click", function(event){
-//     //     event.preventDefault();
-//      // });
-//       return false;
-//        }
-//       else if(z == "")
-//       {
-//      alert("Enter a Valid year");
-//     //  submit.addEventListener("click", function(event){
-//     //     event.preventDefault();
-//     //   });
-//     return false;
-//       }
-      
-       
-//    }
-//    // code done by foram..
-// }
 
 
 
