@@ -6,8 +6,8 @@
    <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-<form method="get" action="" id="mainForm" onsubmit="return empty()">
-   <script type="text/javascript" src="js/chapter09-project01.js"></script>
+<form method="get" action="" id="mainForm">
+   <script type="text/javascript" src="js/chapter09-project01.js"> </script>
    <fieldset>
       <legend>Edit Art Work Details</legend>
       <table>
@@ -76,7 +76,7 @@
          <tr>
             <td colspan="2">
                <div class="rectangle centered"> 
-                  <input type="submit" id="submit" class="btn">
+                  <input type="submit" id="submit" class="btn"  onsubmit="return submissionCheck()">
                   <!-- <script>empty();</script> -->
                   <input type="reset" value="Clear Form" class="btn">      
                </div>

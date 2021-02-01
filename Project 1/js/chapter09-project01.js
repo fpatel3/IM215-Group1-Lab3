@@ -2,21 +2,6 @@
 /* add code here  */
 
 
-// /* Example code done by Eduardo */
-// window.addEventListener('load',function(){
-//   var  highlightable = document.querryselctorAll(".highlight");
-
-//   for (i=0/ i< highlightableInputs.length; i++)
-//   {
-//       var toggle = (event) => {event.target.classlist.toggle('highlight')
-//       highlightableInputs[i].addEventListener('focus',toggle)
-//       highlightableInputs[i].addEventListener('blur',toggle)
-//     }
-
-
-//   }
-// }
-
 
 function setBackground(e) {
     if (e.type == "focus") { e.target.classlist.add("highlightable")
@@ -31,56 +16,85 @@ function setBackground(e) {
         for (i = 0; i < fields.length; i++) {
             fields[i].addEventListener("focus", setBackground);
             fields[i].addEventListener("blur", setBackground);
-        }   //code done by vaidehi
-    });
-
-   
+        }   //code done by vaidehi       
+      });
 }
 
 
 
-function empty()
-{
-  var x,y,z;
-  x = document.getElementById("title").value; 
+submit.addEventListener("load",function(){
+var form = document.getElementById("mainForm");
+form.addEventListener("submit",submissionCheck);
+function submissionCheck(event){
+  
+  var requiredInputs = document.querySelectorAll(".required");
 
-  y =  document.getElementById("description").value;
-  z =  document.getElementById("year").value;
-  if (x == "" || y == "" || z == "") 
-   { 
-       if(x == "")
-       {
-           console.log(x);
-            alert("Enter a Valid title");
-    //   submit.addEventListener(
-    //       "click", function(event){
-    //     event.preventDefault();
-    //         });
-            return false;
-       }
-       else if(y == "")
-       {
-        console.log(y);
+      for(i=0; i < requiredInputs.length; i++){
+            if(requiredInputs[i].nodeValue == "")
+            {
+                event.preventDefault();                
+                requiredInputs[i].classList.add("error");
+                alert("You are trying to submit the form");
+            }
 
-      alert("Enter a Valid description");
-    //   submit.addEventListener("click", function(event){
-    //     event.preventDefault();
-     // });
-      return false;
-       }
-      else if(z == "")
-      {
-     alert("Enter a Valid year");
-    //  submit.addEventListener("click", function(event){
-    //     event.preventDefault();
-    //   });
-    return false;
-      }
+            else{
+                requiredInputs.classList.remove("error");
+            }
+          }
+}
+});
+
+
+
+
       
        
-   }
-   // code done by foram..
-}
+//    }
+//    // code done by foram..
+// }
+// function empty()
+// {
+//   var x,y,z;
+//   x = document.getElementById("title").value; 
+
+//   y =  document.getElementById("description").value;
+//   z =  document.getElementById("year").value;
+//   if (x == "" || y == "" || z == "") 
+//    { 
+//        if(x == "")
+//        {
+//            console.log(x);
+//             alert("Enter a Valid title");
+//     //   submit.addEventListener(
+//     //       "click", function(event){
+//     //     event.preventDefault();
+//     //         });
+//             return false;
+//        }
+//        else if(y == "")
+//        {
+//         console.log(y);
+
+//       alert("Enter a Valid description");
+//     //   submit.addEventListener("click", function(event){
+//     //     event.preventDefault();
+//      // });
+//       return false;
+//        }
+//       else if(z == "")
+//       {
+//      alert("Enter a Valid year");
+//     //  submit.addEventListener("click", function(event){
+//     //     event.preventDefault();
+//     //   });
+//     return false;
+//       }
+      
+       
+//    }
+//    // code done by foram..
+// }
+
 
 
 
