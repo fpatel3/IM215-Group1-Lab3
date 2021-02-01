@@ -2,7 +2,20 @@
 /* add code here  */
 
 
-/* add code here  */
+// /* Example code done by Eduardo */
+// window.addEventListener('load',function(){
+//   var  highlightable = document.querryselctorAll(".highlight");
+
+//   for (i=0/ i< highlightableInputs.length; i++)
+//   {
+//       var toggle = (event) => {event.target.classlist.toggle('highlight')
+//       highlightableInputs[i].addEventListener('focus',toggle)
+//       highlightableInputs[i].addEventListener('blur',toggle)
+//     }
+
+
+//   }
+// }
 
 
 function setBackground(e) {

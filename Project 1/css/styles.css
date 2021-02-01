@@ -65,7 +65,11 @@ form select {
    text-align: center;
 }
 .highlight {
-    background-color: #FFE0B2;
+    background-color: #dbd6cd;
+}    
+
+.hilightable {
+   background-color:  #f3efe8;
 }    
 .error {
     background: #FFCDD2 url(error.png) no-repeat 98% center;
