@@ -23,12 +23,12 @@ function getOpacity(eventInstance, isNext){
     if(isNext){
         document.getElementById(eventInstance).style.opacity = 0.8;
         //document.getElementById(eventInstance).style.opacity = 0.8;
-    } /*by vaidehi*/
+    } 
     else{
         document.getElementById(eventInstance).style.opacity = 0;
         
     }
 
-    document.getElementById(eventInstance).style.transition = "opacity 1s";
+    document.getElementById(eventInstance).style.transition = "opacity 1s"; /*by vaidehi*/
 
 }/* Sharmin*/
