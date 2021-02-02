@@ -16,7 +16,7 @@ function showImage(imgName,imgTitle) {
 
  
    curCaption.innerHTML = imgTitle;
-}/*Foram*/
+}/*This is done by Foram*/
 
   
 
@@ -30,18 +30,7 @@ function getOpacity(isNext){
         imgCaption.style.opacity = 0.8;
         
     }
-}/* Sharmin*/
+    document.getElementById("caption").style.transition = "opacity 1s";  /*This is done by vaidehi*/
+}/* This is done by Sharmin*/
 
-function getOpacity(eventInstance, isNext){
-    if(isNext){
-        document.getElementById(eventInstance).style.opacity = 0.8;
-        //document.getElementById(eventInstance).style.opacity = 0.8;
-    } 
-    else{
-        document.getElementById(eventInstance).style.opacity = 0;
-        
-    }
 
-    document.getElementById(eventInstance).style.transition = "opacity 1s"; /*by vaidehi*/
-
-}/* Sharmin*/
